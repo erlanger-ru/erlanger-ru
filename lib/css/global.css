@@ -1,0 +1,362 @@
+/* body.css */
+
+body {
+	height: 100%;
+	background: URL('/lib/images/site/page-bg.png') repeat-x;
+	
+	font-family: Arial, sans-serif;
+	font-size: .9em;
+}
+
+#top-menu-items {
+	float: right;
+	margin-top: 21px;
+	width: 740px;
+}
+
+#top-menu-items a, #top-menu-items a:link {
+	display: block;
+	float: left;
+
+	height: 52px;
+
+	margin-top: -20px;
+	margin-left: 30px;
+	padding-left: 10px;
+	padding-right: 10px;
+
+	line-height: 1.8em;
+	font-size: 1.8em;
+	color: navy;
+
+	background: none;
+
+}
+
+#top-menu-items a:hover,#top-menu-items a.active {
+	background: URL('/lib/images/site/menu-item-bg.png') repeat-x;
+	color: white;
+}
+
+#top-menu-items a#news-menu-item:hover, #top-menu-items a#news-menu-item.active {
+	background-position: center top;
+}
+
+#top-menu-items a#community-menu-item:hover, #top-menu-items a#community-menu-item.active {
+	background-position: center -52px;
+}
+
+#top-menu-items a#forum-menu-item:hover, #top-menu-items a#forum-menu-item.active {
+	background-position: center -104px;
+}
+
+#top-menu-items a#wiki-menu-item:hover, #top-menu-items a#wiki-menu-item.active {
+	background-position: center -156px;
+}
+
+#frontpage h1 {
+	height: 38px;
+	
+	padding-left: 5px;
+
+	background: URL('/lib/images/site/front-title-bg.png') repeat-x;
+	
+	font-size: 1.4em;
+	line-height: 38px;
+	color: white;
+}
+
+#frontpage div {
+    overflow: hidden;
+}
+
+#frontpage #news h1 {
+	background-position: center top;
+}
+
+#frontpage #community h1 {
+	background-position: center -38px;
+}
+
+#frontpage #forum h1 {
+	background-position: center -76px;
+}
+
+#frontpage #misc h1 {
+	background-position: center -114px;
+}
+
+#news a, #news a:link, div.news a, div.news a:link {
+	color: #ff6608;
+} 
+
+#community a, #community a:link, div.community a, div.community a:link {
+	color: #268cc5;
+} 
+
+#forum a, #forum a:link, div.forum a, div.forum a:link {
+	color: #006e2e;
+} 
+
+#misc a, #misc a:link, div.misc a, div.misc a:link {
+	color: #e09400;
+} 
+
+
+#frontpage div.item, #frontpage ul.twittList {
+	font-size: .8em;
+}
+
+#frontpage h2 {
+	font-size: 1.1em;
+	font-weight: bold;
+}
+#frontpage h3 {
+	font-size: 1em;
+	font-weight: bold;
+}
+
+span.rss-url {
+	display: none;
+}
+
+span.breadcrumb {
+	font-size: .7em;
+}
+
+
+#page-content img {
+	float: right;
+	top: 0px;
+}
+
+div.page-aside {
+	overflow: hidden;
+}
+
+div.page-aside h2 {
+	height: 38px;
+	
+	padding-left: 5px;
+
+	background: URL('/lib/images/site/front-title-bg.png') repeat-x;
+	
+	font-size: 1.4em;
+	line-height: 38px;
+	color: white;
+}
+
+div.page-aside h2#news {
+	background-position: center top;
+}
+
+div.page-aside h2#community {
+	background-position: center -38px;
+}
+
+div.page-aside h2#forum {
+	background-position: center -76px;
+}
+
+div.page-aside h2#misc, div.page-aside h2#article {
+	background-position: center -114px;
+}
+
+.page-aside h3 {
+	font-size: 1.1em;
+}
+
+.page-aside div.item {
+	margin-bottom: 10px;
+}
+
+.page-aside ul {
+	padding: 0;
+	margin: 0;
+	margin-left: 2em;
+}
+
+.page-aside ul li{
+	margin-bottom: 0.5em;
+}
+
+ul.pager {
+	list-style-type: none;
+}
+
+ul.pager li {
+	float: left;
+	padding-right: 20px;
+}
+
+br.clear {
+	clear: both;
+}
+
+#footer {
+	margin-top: 10em;
+	font-size: .9em;
+}
+
+div#page-content h1 {
+	margin-bottom: 0;
+}
+
+li.list-item h3{
+	margin-bottom: 0;
+}
+
+div.item-date {
+	font-size: .8em;
+	padding-bottom: 1.5em;
+}
+
+form.login {
+	font-size: .8em;
+}
+
+form.login label {
+	float: left;
+	line-height: 2em;
+}
+form.login input {
+	float: right;
+}
+
+.small {
+	font-size: .8em;
+}
+
+.gray {
+	color: #888;
+}
+
+
+#thread li {
+	margin-bottom: 2em;
+}
+
+li.alt {
+	background-color: #f8f8f8;
+	padding: .5em;
+}
+
+#user-profile form{
+	float: left;
+}
+
+div.printfooter, div.printfooter2 {
+	text-align: left;
+	font-size: .8em;
+	overflow: hidden;
+	
+	background-color: #f8f8f8;
+	padding: .5em;
+	
+	clear: both;
+}
+div.printfooter {
+	margin-top: 4em;
+}
+
+
+td {
+	vertical-align: top;
+}
+
+
+#editform textarea {
+	width: 100%;
+	height: 40em;
+}
+
+#tweet {
+	margin: 0px;
+}
+
+ul.twittList {
+	margin: 0;
+	padding: 0;
+	list-style-type: none !important;
+}
+
+ul.twittList img{
+	float: left;
+	margin: 2px;
+}
+
+ul.twittList li{
+	margin-bottom: 2em;
+}
+
+pre {
+    overflow: auto;
+}
+
+div.prevnext {
+	margin-top: 4em;
+}
+
+div.next {
+	text-align: right;
+}
+
+div.js-kit-comments {
+	margin-top: 3em;
+}
+
+div.js-kit-comments img {
+	float: none !important;	
+}
+
+img.js-singleCommentAvatar {
+	float: left !important;
+}
+
+input.js-kit-from-name {
+	margin-left:60px;
+	margin-top:0.1em;
+}
+
+span.js-singleCommentName, span.js-singleCommentIP, span.js-singleCommentText {
+	padding-bottom: 1em !important;
+	font-size:1.2em !important;
+}
+
+#ads {
+	margin-top: 4em;
+}
+
+
+a.rss-link, a.twitter-link {
+	padding-left: 14px;
+	background-position: left;
+}
+a.rss-link {
+	background: URL('/lib/images/rss.png') no-repeat;
+}
+a.twitter-link {
+	background: URL('/lib/images/twitter.png') no-repeat;
+}
+
+#frontpage h1 a {
+	text-decoration: none;
+	color: white !important;
+	display: block;
+} 
+
+.no-float {
+    float: none !important;
+}
+
+blockquote {
+    margin-bottom: 18px;
+    border-left: 5px solid #EEE;
+    padding-left: 15px;
+    text-decoration: none;
+    font-style: normal;
+}
+
+li{
+    margin-top: 1em;
+}

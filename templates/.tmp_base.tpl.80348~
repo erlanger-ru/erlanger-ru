@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE html 
+     PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<head>
+		<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+		<title>{% block title %}{{ m.rsc[id].seo_title | default: m.rsc[id].title }}{% endblock %} &mdash; erlanger.ru</title>
+
+		<link rel="icon" href="/favicon.ico" type="image/x-icon" />
+		<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+
+	{% all include "_html_head.tpl" %}		
+
+	{% lib
+		"css/blueprint/screen.css"
+		"css/global.css"
+	 %}
+
+	<link rel="stylesheet" media="print" type="text/css" href="{% url lib star='css/blueprint/print.css' %}" />
+
+	<!--[if IE]>
+	{% lib	"css/blueprint/ie.css" %}
+	<![endif]-->
+
+	</head>
+	<body id="page-body">
+		<div id="top-menu" class="container">
+			<div class="span-5" id="logo"><a href="/" title="erlanger.ru" alt="erlanger.ru"><img src="{% url lib star='images/site/logo.png' %}" title="erlanger.ru" alt="erlanger.ru"></a>
+			</div>
+			<div class="span-3" id="logo-sep">&nbsp;</div>
+			<div class="span-16" id="top-menu-items">
+				<a href="/news/" id="news-menu-item"{% ifequal m.rsc[id].category.name "news" %} class="active"{% endifequal %}{% ifequal m.rsc[id].name "news" %} class="active"{% endifequal %}>новости</a>
+				<a href="/community/" id="community-menu-item"{% ifequal m.rsc[id].name "community" %} class="active"{% endifequal %}>сообщество</a>
+				<a href="/forum/" id="forum-menu-item">форум</a>
+				<a href="/wiki/" id="wiki-menu-item">вики</a>
+			</div>
+		</div>
+		{% block content %}{% endblock %}
+		
+		<div id="footer">
+			&copy; {% now 'Y' %} erlanger.ru <br />
+			Все данные на сайте получены из открытых источников.<br />
+			Если вы используете материалы с сайта, пожалуйста, укажите это, поставив ссылку на erlanger.ru<br /><br />
+			Реализация: <a href="http://dmitriid.com/">Дмитрий "Мамут" Димандт</a><br />
+			Использовано: <a href="http://zotonic.com/">Zotonic CMS</a>,
+			              <a href="http://www.mediawiki.org/">MediaWiki</a>,
+			              <a href="http://bbpress.org/">bbPress</a>,
+						  <a href="http://www.blueprintcss.org/">Blueprint CSS</a>			
+		</div>
+		
+		{% all include "_js_include.tpl" %}
+		{% all include "_html_body.tpl" %}
+		
+	</body>
+</html>
